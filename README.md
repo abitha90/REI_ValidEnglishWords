@@ -8,6 +8,10 @@ There is an utility class called Dictionary which has one method isValidEnglishW
 The project is based on SOLID (Single Responsibilty principle). There are four classes - CombinatorGenerator, Permutation Generator, StringConverterUtil,
 Interface Dictionary and the FindValidEnglishWords. Each class has a single responsibility to perform. The main class for this application is FindValidEnglishWords. It's dependencies are injected using dependency injection. Also, Dictionary is exposed as Interface, which is implemented by MockDictionary. This, along with use of DI pattern enables future integration with an actual dictionary without major code change. Unit Tests are covered for individual classes, and Integration Test are covered for the end-to-end functionality.
 
+## ASSUMPTIONS
+1. Length of the input String is within the maximum limit.
+
+
 ## TOOLS/PACKAGES USED
 1. Maven - For Build Management
 2. Git - For Version Control
