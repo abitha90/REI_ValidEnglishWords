@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StringConverterUtil {
-    /** Returns a List of String for each List of Character input.
+    /** @description Returns a List of String for each List of Character input.
      * @param charList
      * @return result - List of String
      */

@@ -6,7 +6,11 @@ There is an utility class called Dictionary which has one method isValidEnglishW
 
 ## PROJECT DESCRIPTION
 The project is based on SOLID (Single Responsibilty principle). There are four classes - CombinatorGenerator, Permutation Generator, StringConverterUtil,
-Interface Dictionary and the FindValidEnglishWords. Each class has a single responsibility to perform. The main class for this application is FindValidEnglishWords. It's dependencies are injected using dependency injection. Also, Dictionary is exposed as Interface, which is implemented by MockDictionary. This, along with use of DI pattern enables future integration with an actual dictionary without major code change. Unit Tests are covered for individual classes, and Integration Test are covered for the end-to-end functionality.
+Interface Dictionary and the FindValidEnglishWords. Each class has a single responsibility to perform. The main class for this application is FindValidEnglishWords. It's dependencies are injected using dependency injection. Also, Dictionary is exposed as Interface, which is implemented by MockDictionary. This, along with use of DI pattern enables future integration with an actual dictionary without major code change. Unit Tests are covered for individual classes, and Integration Test are covered for the end-to-end functionality.The code uses recursion to solve the problem.
+
+## ASSUMPTIONS
+1. Length of the input String is within the maximum limit.
+
 
 ## TOOLS/PACKAGES USED
 1. Maven - For Build Management
@@ -23,9 +27,13 @@ Class Name                        |      Intention
 3. StringConverterUtil            | To convert the given character array to String and to generate list of strings
 4. IDictionary                    | Mocked Interface
 
+## TESTING METHODOLOGY
+Created Unit Test for each functionality and Integration test for end-to-end functionality. Also the data stubs are created in a folder for each Test case, which is called and read by the function directly. So, in future, adding a testcase, is simply adding an extra input,output files in the corresponding naming convention, rather than editing the code.
+
 ## FUTURE IMPROVEMENTS
 1. Integrartion with Cucumber for scenario based testing.
 2. Reduce memory footprint for combinations and permutations, by exposing results as a Stream.
 3. Add Performance tests on latency.
 4. Add exception tests. I did not include exception tests, since we are using a Mock Dictionary.
-5. Add checkstyles.     
+5. Add JavaDocs and checkstyle.
+     

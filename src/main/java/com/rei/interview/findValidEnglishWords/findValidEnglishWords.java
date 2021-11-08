@@ -10,7 +10,8 @@ import java.util.stream.Collectors;
 
 public class FindValidEnglishWords {
     /**
-     * This is the main class, that takes all the dependencies as its argument.
+     * @description This is the main class, that takes all the dependencies as
+     * its argument.
      * @param combinationGenerator
      * @param permutationGenerator
      * @param stringConverterUtil
@@ -28,7 +29,7 @@ public class FindValidEnglishWords {
     }
 
     /**
-     * This method takes the String input and calls the CombinationGenerator methods to
+     * @description This method takes the String input and calls the CombinationGenerator methods to
      * generate all the possible combinations of the characters(List of List) from the input word
      * and pass (each List of Character) it to PermutationGenerator method to arrive all possible
      * arrangements of the characters.The output from the permutation generator,is then passed to

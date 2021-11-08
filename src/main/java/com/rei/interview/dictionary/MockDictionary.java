@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class MockDictionary implements IDictionary {
     /**
-     * Returns a Set of String which is converted to their lower case.
+     * @description Returns a Set of String which is converted to their lower case.
      * @param words
      */
     public MockDictionary(final Set<String> words)

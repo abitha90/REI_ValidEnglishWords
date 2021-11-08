@@ -7,7 +7,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class CombinationGenerator {
-
+    /**
+     * @description Returns a List Of List of Character from the input String by calling the same method recursively.
+     * This method returns an empty list when the input string is empty and returns the same string as list of list
+     * with the input String.
+     * @param String word
+     * @return List of List of all possible combination of Characters
+     */
 
     public List<List<Character>> findCombinations(final String word)
     {
@@ -19,14 +25,6 @@ public class CombinationGenerator {
 
         return findCombinations(charList);
     }
-
-    /**
-     * Returns a List Of List of Character from the input String by calling the same method recursively.
-     * This method returns an empty list when the input string is empty and returns the same string as list of list
-     * with the input String.
-     * @param String word
-     * @return List of List of all possible combination of Characters
-     */
 
     private List<List<Character>> findCombinations(List<Character> charList) {
 
@@ -45,7 +43,7 @@ public class CombinationGenerator {
     }
 
     /**
-     * Returns the List of List of characters for the given Character if the String input is a Single
+     * @description Returns the List of List of characters for the given Character if the String input is a Single
      * Letter
      * @param c
      * @return result -input character as List of List.
@@ -61,7 +59,7 @@ public class CombinationGenerator {
     }
 
     /**
-     * Returns List of List of Character after joining the two input list list1 and list2
+     * @description Returns List of List of Character after joining the two input list list1 and list2
      * @param list1
      * @param list2
      * @return finalResult-List of List of Characters after joining the two input lists.

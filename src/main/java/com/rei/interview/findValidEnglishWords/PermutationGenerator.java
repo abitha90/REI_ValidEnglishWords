@@ -8,7 +8,7 @@ import java.util.List;
 
 public class PermutationGenerator {
     /**
-     * The method takes List of Character input generated from CombinationGenerator and finds
+     * @description The method takes List of Character input generated from CombinationGenerator and finds
      * all possible arrangements of the list and creates List of List of character arrangements.
      * @param list
      * @return result-List of List of all possible arrangements of Character
