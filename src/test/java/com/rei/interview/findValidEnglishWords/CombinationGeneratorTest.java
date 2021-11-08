@@ -18,21 +18,21 @@ class CombinationGeneratorTest {
     }
 
     @Test
-    void tofindCombinations_ForSingleLetter() {
+    void findCombinations_ForSingleLetter() {
         final String input = "W";
         final char[][] expected = new char[][]{
                 {'W'},
                 {}
         };
 
-        final List<List<Character>> actual = subject.findCombinations(getCharList(input.toCharArray()));
+        final List<List<Character>> actual = subject.findCombinations(input);
         final Set<Map<Character,Integer>> actualSetMap = getCharacterCounts(actual);
         final Set<Map<Character,Integer>> expectedSetMap = getCharacterCounts(getCharListList(expected));
         MatcherAssert.assertThat(actualSetMap, equalTo(expectedSetMap));
     }
 
     @Test
-    void tofindCombinations_ForMoreThanOneLetter()
+    void findCombinations_ForMoreThanOneLetter()
     {
         final String input = "WING";
         final char[][] expected = new char[][]{
@@ -41,14 +41,14 @@ class CombinationGeneratorTest {
                 {'W','I','N'},{'W','N','G'},{'I','N','G'},{'W','I','G'},
                 {'W','I','N','G'},{}
         };
-        final List<List<Character>> actual = subject.findCombinations(getCharList(input.toCharArray()));
+        final List<List<Character>> actual = subject.findCombinations(input);
         final Set<Map<Character,Integer>> actualSetMap = getCharacterCounts(actual);
         final Set<Map<Character,Integer>> expectedSetMap = getCharacterCounts(getCharListList(expected));
         MatcherAssert.assertThat(actualSetMap, equalTo(expectedSetMap));
     }
 
     @Test
-    void tofindCombinations_ForDuplicateLetter()
+    void findCombinations_ForDuplicateLetter()
     {
         final String input = "FEEL";
         final char[][] expected = new char[][]{
@@ -58,21 +58,21 @@ class CombinationGeneratorTest {
                 {'F','E','E','L'},
                 {}
         };
-       final List<List<Character>> actual = subject.findCombinations(getCharList(input.toCharArray()));
+       final List<List<Character>> actual = subject.findCombinations(input);
        final Set<Map<Character,Integer>> actualSetMap = getCharacterCounts(actual);
        final Set<Map<Character,Integer>> expectedSetMap = getCharacterCounts(getCharListList(expected));
        MatcherAssert.assertThat(actualSetMap,equalTo(expectedSetMap));
     }
 
     @Test
-    void tofindCombinations_Null(){
-        final List<List<Character>> actual = subject.findCombinations(null);
+    void findCombinations_Null(){
+        final List<List<Character>> actual = subject.findCombinations((String) null);
         MatcherAssert.assertThat(actual, is(empty()));
     }
 
     @Test
-    void tofindCombinations_Empty(){
-        final List<List<Character>> actual = subject.findCombinations(Collections.EMPTY_LIST);
+    void findCombinations_Empty(){
+        final List<List<Character>> actual = subject.findCombinations("");
         MatcherAssert.assertThat(actual, is(empty()));
     }
 

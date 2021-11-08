@@ -3,11 +3,25 @@ package com.rei.interview.findValidEnglishWords;
 import org.apache.commons.collections4.ListUtils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class CombinationGenerator {
-    public List<List<Character>> findCombinations(List<Character> charList) {
+
+    public List<List<Character>> findCombinations(final String word)
+    {
+        final List<Character> charList = new ArrayList<>();
+        for (char c : word.toCharArray())
+        {
+            charList.add(c);
+        }
+
+        return findCombinations(charList);
+    }
+
+    private List<List<Character>> findCombinations(List<Character> charList) {
 
         if (charList == null || charList.isEmpty()) {
             return Collections.EMPTY_LIST;
