@@ -27,10 +27,14 @@ Class Name                        |      Intention
 3. StringConverterUtil            | To convert the given character array to String and to generate list of strings
 4. IDictionary                    | Mocked Interface
 
+## TESTING METHODOLOGY
+Created Unit Test for each functionality and Integration test for end-to-end functionality. Also the data stubs are created in a folder for each Test case, which is called and read by the function directly. So, in future, adding a testcase, is simply adding an extra input,output files in the corresponding naming convention, rather than editing the code.
+
 ## FUTURE IMPROVEMENTS
 1. Integrartion with Cucumber for scenario based testing.
 2. Reduce memory footprint for combinations and permutations, by exposing results as a Stream.
 3. Add Performance tests on latency.
-4. Add exception tests. I did not include exception tests, since we are using a Mock Dictionary.
-5. Add JavaDocs 
+4. Add Load Test 
+5. Add exception tests. I did not include exception tests, since we are using a Mock Dictionary.
+6. Add JavaDocs 
      
