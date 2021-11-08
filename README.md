@@ -6,7 +6,7 @@ There is an utility class called Dictionary which has one method isValidEnglishW
 
 ## PROJECT DESCRIPTION
 The project is based on SOLID (Single Responsibilty principle). There are four classes - CombinatorGenerator, Permutation Generator, StringConverterUtil,
-Interface Dictionary and the FindValidEnglishWords. Each class has a single responsibility to perform. The main class for this application is FindValidEnglishWords. It's dependencies are injected using dependency injection. Also, Dictionary is exposed as Interface, which is implemented by MockDictionary. This, along with use of DI pattern enables future integration with an actual dictionary without major code change. Unit Tests are covered for individual classes, and Integration Test are covered for the end-to-end functionality.
+Interface Dictionary and the FindValidEnglishWords. Each class has a single responsibility to perform. The main class for this application is FindValidEnglishWords. It's dependencies are injected using dependency injection. Also, Dictionary is exposed as Interface, which is implemented by MockDictionary. This, along with use of DI pattern enables future integration with an actual dictionary without major code change. Unit Tests are covered for individual classes, and Integration Test are covered for the end-to-end functionality.The code uses recursion to solve the problem.
 
 ## ASSUMPTIONS
 1. Length of the input String is within the maximum limit.
@@ -34,7 +34,6 @@ Created Unit Test for each functionality and Integration test for end-to-end fun
 1. Integrartion with Cucumber for scenario based testing.
 2. Reduce memory footprint for combinations and permutations, by exposing results as a Stream.
 3. Add Performance tests on latency.
-4. Add Load Test 
-5. Add exception tests. I did not include exception tests, since we are using a Mock Dictionary.
-6. Add JavaDocs 
+4. Add exception tests. I did not include exception tests, since we are using a Mock Dictionary.
+5. Add JavaDocs and checkstyle.
      
