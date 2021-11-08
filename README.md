@@ -27,7 +27,8 @@ Class Name                        |      Intention
 1. CombinationGenerator           | To derive at all possible selection of letters,for the given input string 
 2. PermutationGenerator           | To derive at all possible arrangement of letters, for the derived combinations
 3. StringConverterUtil            | To convert the given character array to String and to generate list of strings
-4. IDictionary                    | Mocked Interface
+4. IDictionary                    | Interface for Dictionary
+5. MockDictionary                 | Mock implementation of IDictionary. 
 
 ## TESTING METHODOLOGY
 Created Unit Test for each functionality and Integration test for end-to-end functionality. Also, the data stubs are created in a folder for each Test case, which is called and read by the function directly. So, in the future, adding a testcase, is simply adding an extra input,output files in the corresponding naming convention, rather than editing the code.
