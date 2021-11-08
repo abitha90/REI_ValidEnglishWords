@@ -32,4 +32,5 @@ Class Name                        |      Intention
 2. Reduce memory footprint for combinations and permutations, by exposing results as a Stream.
 3. Add Performance tests on latency.
 4. Add exception tests. I did not include exception tests, since we are using a Mock Dictionary.
+5. Add JavaDocs 
      
