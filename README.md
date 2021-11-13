@@ -4,6 +4,18 @@
 The project aims to generate all the valid English words from a given String using Java, and validate functionality using unit and integration tests.
 There is a utility class called Dictionary which has one method isValidEnglishWord, that returns a boolean if a string input is passed. 
 
+## Problem Statement
+"Find all valid English words in a given String using Java". For example, if the given the word is "WORKING", the solution should easily find the words "WORK" and "KING".  It should also be able to find other words like "ROW", "RING" and "KNOW". 
+
+You have access to a utility class called Dictionary, which has one method, isEnglishWord (String word).  Dictionary.isEnglishWord (String word) connects to a (mocked) online dictionary and returns Boolean true if the String passed to it is an English word, return false otherwise.
+
+**Homework Instructions:**
+1. Use Maven to create a project to answer this problem.
+1. You will need to create the Dictionary class.
+1. You will need to mock Dictionary.isEnglishWord (String word) for your solution and tests.
+1. The output of your primary method should be a collection of Strings without duplicates.
+1. Create tests that exercise your class and methods.
+
 ## PROJECT DESCRIPTION
 The project is based on SOLID (Single Responsibility principle). There are four classes - CombinatorGenerator, Permutation Generator, StringConverterUtil,
 Interface Dictionary and the FindValidEnglishWords. Each class has a single responsibility to perform. The main class for this application is FindValidEnglishWords. 
